@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HW2 task2</title>
+        <link rel="stylesheet" href="./st.css">
+    </head>
+    <body>
+        <div class="top center">
+            <p class="top-model">Выберите модель: </p>
+            <select class="product" id="productSelect"> 
+                <option value="0">Apple iPhone 13</option>
+                <option value="1">Samsung Galaxy Z Fold 3</option>
+                <option value="2">Sony PlayStation 5</option>
+            </select><br><br>
+            
+            <input type="text" id="nameInput" placeholder="Введите ваше имя..." required /><br>
+            <textarea class="review-textarea" id="reviewInput" rows="4" cols="50" placeholder="Введите ваш отзыв..."></textarea><br>
+            <button class="submitbutton" id="submitReview">Отправить отзыв</button>
+            
+            <div class="review-container" id="reviewContainer"></div>
+        </div>
+        <script src="./DZ2.js"></script>
+    </body>
+</html>

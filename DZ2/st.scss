@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    background-color: #ddf1f1;
+}
+
+.center {
+    padding-left: calc(50% - 350px);
+    padding-right: calc(50% - 350px);
+}
+
+.top {
+    flex-direction: column;
+    align-items: center;
+    &-model {
+        font-size: 25px;
+    }
+}
+.product {
+    width: 250px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+input[type="text"] {
+    background-color: transparent;
+    border: 1px solid #000;
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.submitbutton {
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #71e263;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: #67cf5a;
+    }
+}
+
+.review {
+    width: 450px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    &-textarea {
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    &-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-box {
+        height: 150px;
+        overflow-y: scroll;
+        margin-top: 30px;
+    }
+    &-title {
+        width: 470px;
+        position: fixed;
+        background-color: #ddf1f1;
+    }
+}
+.reviews_item {
+    max-height: 100px; /* Максимальная высота блока */
+    overflow: hidden; /* Скрыть переполнение */
+    text-overflow: ellipsis; /* Добавить многоточие для длинного текста */
+    white-space: nowrap; /* Запретить перенос строки */
+    display: block; /* Блоковый элемент */
+    border: 1px solid #ccc; /* Граница для визуализации */
+    padding: 10px; /* Отступы внутри блока */
+}
